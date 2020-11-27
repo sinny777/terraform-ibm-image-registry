@@ -7,6 +7,9 @@ VERSION="$1"
 DEST_DIR="$2"
 REPO_SLUG="$3"
 
+set -x
+set -e
+
 if [[ -z "${DEST_DIR}" ]]; then
   DEST_DIR="${MODULE_DIR}/dist"
 fi
