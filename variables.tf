@@ -22,9 +22,9 @@ variable "registry_password" {
   default     = ""
 }
 
-variable "cluster_region" {
+variable "region" {
   type        = string
-  description = "The IBM Cloud region where the cluster will be/has been installed."
+  description = "The region for the image registry been installed."
 }
 
 variable "config_file_path" {
@@ -62,6 +62,6 @@ variable "apply" {
 
 variable "private_endpoint" {
   type        = string
-  description = "Flag indicating that the registru url should be created with private endpoints"
+  description = "Flag indicating that the registry url should be created with private endpoints"
   default     = "true"
 }
