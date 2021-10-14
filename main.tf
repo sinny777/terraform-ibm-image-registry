@@ -41,7 +41,7 @@ resource "null_resource" "create_dirs" {
 
 resource null_resource ibmcloud_crplugin {
   provisioner "local-exec" {
-    command = "ibmcloud plugin install container-registry"
+    command = "${path.module}/scripts/install-cr-plugin.sh"
   }
 }
 
